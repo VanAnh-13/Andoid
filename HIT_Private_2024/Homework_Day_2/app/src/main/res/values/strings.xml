@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application Homework</string>
+    <string name="le_van_anh"><b>Le Van Anh</b></string>
+    <string name="down">down</string>
+    <string name="more">more</string>
+    <string name="avatar">Avatar</string>
+    <string name="posts"><b>54</b>\nPosts</string>
+    <string name="followers"><b>1K</b>\nFollowers</string>
+    <string name="following"><b>163</b>\nFollowing</string>
+    <string name="digital_googdies_designer_vananh">Digital googdies designer @vananh</string>
+    <string name="everything_is_degigned">Everything is degigned.</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="add_story">add story</string>
+    <string name="grid_icon">grid_icon</string>
+    <string name="tags_icon">tags icon</string>
+    <string name="anh1">anh1</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="create_button">create_button</string>
+    <string name="heart">heart</string>
+</resources>

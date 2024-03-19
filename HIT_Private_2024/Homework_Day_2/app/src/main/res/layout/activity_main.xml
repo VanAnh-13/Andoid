@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="4"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/lock"
+                tools:ignore="ContentDescription"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="39dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/le_van_anh"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/down"
+                android:src="@drawable/down" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/more"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/avt"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/girl"
+        app:layout_constraintBottom_toTopOf="@id/bio"
+        app:layout_constraintLeft_toLeftOf="@id/linearUp"
+        app:layout_constraintRight_toLeftOf="@id/info"
+        app:layout_constraintTop_toBottomOf="@id/linearUp"
+        app:shapeAppearance="@style/roundedImageView" />
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintLeft_toRightOf="@id/avt"
+        app:layout_constraintRight_toRightOf="@id/linearUp"
+        app:layout_constraintTop_toBottomOf="@id/linearUp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/posts"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:gravity="center"
+            android:text="@string/followers"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:gravity="center"
+            android:text="@string/following"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="@id/avt"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        tools:ignore="UselessLeaf">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="@string/le_van_anh"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:text="@string/digital_googdies_designer_vananh"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:text="@string/everything_is_degigned"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_background_ripple"
+        android:hint="@string/edit_profile"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        app:backgroundTint="@null"
+        app:layout_constraintLeft_toLeftOf="@+id/bio"
+        app:layout_constraintTop_toBottomOf="@+id/bio" />
+
+    <LinearLayout
+        android:id="@+id/story"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@id/edit"
+        app:layout_constraintTop_toBottomOf="@id/edit">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            app:shapeAppearance="@style/roundedImageView" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/a1"
+            app:shapeAppearance="@style/roundedImageView" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/a2"
+            app:shapeAppearance="@style/roundedImageView" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/a3"
+            app:shapeAppearance="@style/roundedImageView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grid_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/story"
+        app:layout_constraintTop_toBottomOf="@+id/story">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:contentDescription="@string/grid_icon"
+            android:src="@drawable/grid_icon" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:contentDescription="@string/tags_icon"
+            android:src="@drawable/tags_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grid1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/grid_tags"
+        app:layout_constraintTop_toBottomOf="@+id/grid_tags">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/anh1"
+            android:src="@drawable/a1" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/anh1"
+            android:src="@drawable/img" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/anh1"
+            android:src="@drawable/img_1" />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/anh1"
+            android:src="@drawable/img_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/grid1"
+        app:layout_constraintTop_toBottomOf="@+id/grid1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/anh1"
+            android:src="@drawable/img_3" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/anh1"
+            android:src="@drawable/img_4" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/anh1"
+            android:src="@drawable/img_5" />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/anh1"
+            android:src="@drawable/img_6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageView
+            android:id="@id/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1.5"
+            android:contentDescription="@string/home"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/search"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/create"
+            android:layout_width="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:contentDescription="@string/create_button"
+            android:src="@drawable/button_add" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1.5"
+            android:contentDescription="@string/heart"
+            android:src="@drawable/heart" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/chinh_anh"
+            app:shapeAppearance="@style/roundedImageView" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
