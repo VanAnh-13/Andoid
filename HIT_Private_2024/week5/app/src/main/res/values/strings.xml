@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Instagram</string>
+    <string name="camera">camera</string>
+    <string name="near_me">near me</string>
+    <string name="instagram">Instagram</string>
+    <string name="more">more</string>
+    <string name="following">Following</string>
+    <string name="group">group\n</string>
+    <string name="favorites">Favorites</string>
+    <string name="like">like</string>
+    <string name="messenger">messager</string>
+    <string name="avt">avt</string>
+    <string name="your_story">Your story</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="create">create</string>
+    <string name="reels">reels</string>
+    <string name="me">me</string>
+    <string name="name_profile">name profile</string>
+    <string name="content">content</string>
+    <string name="comment">comment</string>
+    <string name="share">share</string>
+    <string name="save">save</string>
+    <string name="add_a_comment">Add a comment...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="levanh13">levanh13</string>
+    <string name="threads">threads</string>
+    <string name="posts"><b>54</b>\nPosts</string>
+    <string name="followers"><b>1K</b>\nFollowers</string>
+    <string name="_following"><b>163</b>\nFollowing</string>
+    <string name="digital_googdies_designer_vananh">Digital googdies designer @vananh</string>
+    <string name="everything_is_degigned">Everything is degigned.</string>
+    <string name="le_van_anh">Le Van Anh</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="share_profile">Share Profile</string>
+    <string name="your_post">your post</string>
+</resources>
