@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application Test</string>
+    <string name="login">Login</string>
+    <string name="hello"><b>Hello</b></string>
+    <string name="again"><b>Again!</b></string>
+    <string name="welcome_back_you_ve_been_missed"><big>Welcome back you’ve\nbeen missed</big></string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="enter_passwords">Enter passwords</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_the_password">Forgot the password</string>
+    <string name="or_continue_with">or continue with</string>
+    <string name="facebook_sign_up">Facebook sign up</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

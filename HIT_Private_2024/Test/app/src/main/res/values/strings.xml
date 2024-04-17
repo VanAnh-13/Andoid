@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="take_note">Take Note</string>
+    <string name="notification">notification</string>
+    <string name="find">Find</string>
+    <string name="all_note">All Note</string>
+    <string name="favorite">Favorite</string>
+    <string name="like">Like</string>
+    <string name="add_a_note">Add a note</string>
+</resources>
