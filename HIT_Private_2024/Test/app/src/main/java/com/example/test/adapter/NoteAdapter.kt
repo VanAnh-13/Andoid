@@ -1,9 +1,11 @@
-package com.example.test
+package com.example.test.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.test.R
+import com.example.test.data.Note
 import com.example.test.databinding.NoteBinding
 
 class NoteAdapter(
@@ -13,7 +15,7 @@ class NoteAdapter(
         RecyclerView.ViewHolder(itemBinding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = NoteViewHolder(
-        NoteBinding.inflate(
+        itemBinding = NoteBinding.inflate(
             LayoutInflater.from(parent.context)
         )
     )
@@ -26,10 +28,21 @@ class NoteAdapter(
             tvTitle.text = yourNoteData[position].title
             tvCreate.text = "Create at: ${yourNoteData[position].createAt}"
             tvContent.text = yourNoteData[position].content
+
+            if (yourNoteData[position].isFavorite) {
+                holder.itemBinding.btnLike.setImageResource(R.drawable.red_heart)
+            } else {
+                holder.itemBinding.btnLike.setImageResource(R.drawable.broken_heart)
+            }
         }
 
         holder.itemBinding.btnLike.setOnClickListener {
-            holder.itemBinding.btnLike.setImageResource(R.drawable.red_heart)
+            yourNoteData[position].isFavorite = !yourNoteData[position].isFavorite
+            if (yourNoteData[position].isFavorite) {
+                holder.itemBinding.btnLike.setImageResource(R.drawable.red_heart)
+            } else {
+                holder.itemBinding.btnLike.setImageResource(R.drawable.broken_heart)
+            }
         }
     }
 }

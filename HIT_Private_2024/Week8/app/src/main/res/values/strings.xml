@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string name="take_note">Take Note</string>
+    <string name="notification">notification</string>
+    <string name="find">Find</string>
+    <string name="all_note">All Note</string>
+    <string name="favorite">Favorite</string>
+    <string name="like">Like</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="title">Title</string>
+    <string name="label_title">Nghỉ lễ đi chơi ở đâu</string>
+    <string name="content">Content</string>
+    <string name="line">line</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_note">Save note</string>
+</resources>
