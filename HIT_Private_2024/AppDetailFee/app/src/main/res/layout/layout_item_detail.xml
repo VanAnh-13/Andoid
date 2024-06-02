@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_item_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_liner_categories"
+    android:visibility="visible">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="50dp">
+
+        <ImageView
+            android:id="@+id/img_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            tools:ignore="ContentDescription"
+            tools:srcCompat="@drawable/eating" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_label_item_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Eating" />
+
+    <TextView
+        android:id="@+id/tv_cost_item_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:textColor="#DD4E4E"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:text="35.000 d" />
+</LinearLayout>
